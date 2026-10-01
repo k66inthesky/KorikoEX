@@ -38,3 +38,11 @@
 - Chrome 實測 OKX 錢包綁定、讀取 40 Sepolia USDC、一鍵斷開、餘額／signer 清除及重新綁定成功。
 - Circle 官方 Ethereum Sepolia USDC 地址已按官方文件核對；公開 Sepolia 禁用 MockUSD／MockUSDC，舊部署儲存資料隔離。
 - 公開 Sepolia 市場部署流程已啟動，尚待使用者錢包簽署與成功收據；未將本地交易冒稱公開測試網交易。
+
+## 低額度交易限制（2026-10-01）
+
+- Codex／Claude 價格改為 0.10／0.15 Sepolia USDC，預設 1 枚。
+- `npm test`：10 個測試全部通過，新增 DvP 客戶端與合約拒絕超過 5 USDC、拒絕後付款餘額不變的檢查。
+- `npm run build` 通過。
+- Sepolia 管理合約與 Claim Topics 元件已有成功收據；市場部署與 DvP 實測尚未全部完成。
+- Chrome 已顯示低價與單筆 5 USDC 限額；自主測試因 Mac 鎖定而暫停，需使用者手動解鎖。

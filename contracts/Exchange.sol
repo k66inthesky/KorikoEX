@@ -52,6 +52,7 @@ contract AtomicDvP is ReentrancyGuard, Ownable {
         require(block.timestamp<=deadline && units>0,'invalid order');
         uint256 payment=units*unitPrice[asset];
         require(payment<=maxPayment,'price exceeds limit');
+        require(payment<=5 * 10**6,'per trade limit: 5 USDC');
         // If the asset leg rejects the buyer's claim, the cash leg rolls back too.
         cash.safeTransferFrom(msg.sender,address(this),payment);
         IERC20(asset).safeTransfer(msg.sender,units);

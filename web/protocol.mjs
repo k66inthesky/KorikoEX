@@ -57,7 +57,7 @@ export async function setup(signer,state={},log=()=>{},persist=()=>{},claimSigne
    push(batch,'Token','addAgent',[state.addresses.hub]);
    push(batch,'Token','unpause',[]);
    push(batch,'Token','mint',[state.addresses.dvp,1000]);
-   push('dvp','AtomicDvP','list',[state.addresses[batch],batch==='codex'?500000n:700000n]);
+   push('dvp','AtomicDvP','list',[state.addresses[batch],batch==='codex'?100000n:150000n]);
   }
   const tx=await hub.execute(targets,calls);state.pendingConfig=tx.hash;persist(state);await record(tx,'設定資格、資產與市場');state.configured=true;delete state.pendingConfig;persist(state);
  }
@@ -67,7 +67,7 @@ export async function trade(signer,state,batch,units=10n){
  if(!state.configured)throw Error('Deploy and configure first');
  const network=await signer.provider.getNetwork();if(Number(network.chainId)!==state.chainId)throw Error('Wrong network');
  await validateCash(signer.provider,state);if(!['codex','claude'].includes(batch)||units<=0n||units>1000n)throw Error('Invalid order');const buyer=await signer.getAddress();const dvp=contract('AtomicDvP',state.addresses.dvp,signer);const cash=cashContract(state.addresses.cash,signer);const token=contract('Token',state.addresses[batch],signer);
- const price=await dvp.unitPrice(state.addresses[batch]);const payment=price*units;if(price===0n)throw Error('尚未掛牌');if(await cash.balanceOf(buyer)<payment)throw Error('Sepolia USDC 餘額不足，請先領取測試 USDC');if(await token.balanceOf(state.addresses.dvp)<units)throw Error('憑證庫存不足');if(!await contract('IdentityRegistry',state.addresses.registry,signer).isVerified(buyer))throw Error('未通過測試資格 Claim');
+ const price=await dvp.unitPrice(state.addresses[batch]);const payment=price*units;if(payment>5_000000n)throw Error('單筆交易不可超過 5 Sepolia USDC');if(price===0n)throw Error('尚未掛牌');if(await cash.balanceOf(buyer)<payment)throw Error('Sepolia USDC 餘額不足，請先領取測試 USDC');if(await token.balanceOf(state.addresses.dvp)<units)throw Error('憑證庫存不足');if(!await contract('IdentityRegistry',state.addresses.registry,signer).isVerified(buyer))throw Error('未通過測試資格 Claim');
  if(await cash.allowance(buyer,state.addresses.dvp)<payment)await (await cash.approve(state.addresses.dvp,payment)).wait();
  const before={cash:await cash.balanceOf(buyer),asset:await token.balanceOf(buyer)};
  const block=await signer.provider.getBlock('latest');

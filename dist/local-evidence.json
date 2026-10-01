@@ -5,6 +5,7 @@
     "ONCHAINID signed claim verified",
     "Codex atomic DvP verified",
     "Claude atomic DvP verified",
+    "5 USDC cap enforced by client and contract without cash debit",
     "unverified buyer rejected without cash debit",
     "frozen buyer rejected"
   ],
@@ -12,20 +13,20 @@
     {
       "batch": "codex",
       "units": "10",
-      "payment": "5000000",
-      "transactionHash": "0x649cb0e6c0a4927b068af2e8faee378a34e4a459752ec8a600d0d2dac4860c96",
+      "payment": "1000000",
+      "transactionHash": "0x18ccba06a976b0860396309e10b43a733ba5662f73e590bcbd480032faa9f530",
       "blockNumber": 17,
       "chainId": 31337,
       "verified": true,
-      "paymentToken": "0xd133a8a0abEd31648E0784434E6C1b7608A1B678",
-      "buyer": "0xdbAa1B54291366276416487d1e8cD5563E9307C5",
+      "paymentToken": "0x61C75D4D35E30d3BEE378E60C543dC0146ee9efE",
+      "buyer": "0x496E430E7e72f9783CAE83BC5Ca016BD65eA80aA",
       "balances": {
         "before": {
           "cash": "10000000000",
           "asset": "0"
         },
         "after": {
-          "cash": "9995000000",
+          "cash": "9999000000",
           "asset": "10"
         }
       }
@@ -33,39 +34,39 @@
     {
       "batch": "claude",
       "units": "10",
-      "payment": "7000000",
-      "transactionHash": "0xae370a48808281fb9ae74e7aa0621cc55f2004c49d53ccf50f1720e1313552c1",
+      "payment": "1500000",
+      "transactionHash": "0xe3f9d345cb2fc6417adae9d07c1394c6a3d630ef52e85df97e1da3c9ecaaa9c3",
       "blockNumber": 19,
       "chainId": 31337,
       "verified": true,
-      "paymentToken": "0xd133a8a0abEd31648E0784434E6C1b7608A1B678",
-      "buyer": "0xdbAa1B54291366276416487d1e8cD5563E9307C5",
+      "paymentToken": "0x61C75D4D35E30d3BEE378E60C543dC0146ee9efE",
+      "buyer": "0x496E430E7e72f9783CAE83BC5Ca016BD65eA80aA",
       "balances": {
         "before": {
-          "cash": "9995000000",
+          "cash": "9999000000",
           "asset": "0"
         },
         "after": {
-          "cash": "9988000000",
+          "cash": "9997500000",
           "asset": "10"
         }
       }
     }
   ],
   "addresses": {
-    "hub": "0x0fF9CAd2af2571d717DB11A3a8cce373a66eF866",
-    "topics": "0xb365016D5e45b1dF55C8ce868FE78091b5a0979b",
-    "issuers": "0xE8eC938d86a50157396F200b7F449E5489e35D66",
-    "storage": "0xe9320667b27E8523dA064fb8a6Db559a8158Eb13",
-    "registry": "0xE88DEa344CCcD394dfB7c9997E4E263b55236bf3",
-    "issuer": "0xF3B42CC212bF5E5861A8076910BB75f020d8d1C1",
-    "buyerIdentity": "0xa1c475E0a95369Ab3448976E863Dcde0CE721044",
-    "inventoryIdentity": "0xa9B13Fde661EDfb2dFaE5e80cA0593139e598A79",
-    "cash": "0xd133a8a0abEd31648E0784434E6C1b7608A1B678",
-    "dvp": "0x1aA46A7beC070dBd4B6aA63b8ab874d22c24a914",
-    "codexCompliance": "0x36259939F439Dea00AC27a60cbdBB2e72190BACA",
-    "codex": "0xe186030029c5d4CeBB8387d851dc5637dF2D0f02",
-    "claudeCompliance": "0xB14b5603AB7C44DbF4bE6c448a5bbc161c674F48",
-    "claude": "0xBE8Ea75B23068DD99Ca7C4fFe6b8030Cc50E4C22"
+    "hub": "0xab22DC3f771040ABDf0D9F80Bf35d1741A3D6393",
+    "topics": "0x0AC0Bb1372263eDc419CC01751c7704A63DC8DcF",
+    "issuers": "0xE1EC518bC8088E94a4cF5996B65e5F100D4A6DD8",
+    "storage": "0x725CEb8BBea22dc62eAB9cb7c159cA62D92ffaa9",
+    "registry": "0xFc7B696d5Fb0897c238e3f436802E3509389df04",
+    "issuer": "0x884FB9C97f88f106C5a34dbb93D11686e4bA55b2",
+    "buyerIdentity": "0xE8C9865CC5aa3d29A38F4Bba4A665Ee5E22D6B7c",
+    "inventoryIdentity": "0xC74C7E09baC27d688a22C9A84F48Ac1B8903A454",
+    "cash": "0x61C75D4D35E30d3BEE378E60C543dC0146ee9efE",
+    "dvp": "0xe5886e885edAef457C071E8190595A17771f0F1f",
+    "codexCompliance": "0xA98655ECB2bED6beCe519F10Fe26d4Afc1e5a4DE",
+    "codex": "0x4C340Fd1d4dAEDca2C2244F37504c4952f7309d8",
+    "claudeCompliance": "0xF710Aa384C3310ca4c924EdcBFAbbB62a0DCDce3",
+    "claude": "0x0dE45b014e35C6F8D8d8ABA3269a4e6d5279D548"
   }
 }
