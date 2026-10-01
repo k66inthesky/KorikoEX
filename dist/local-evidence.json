@@ -1,0 +1,69 @@
+{
+  "chainId": 31337,
+  "network": "local-ganache",
+  "checks": [
+    "ONCHAINID signed claim verified",
+    "Codex atomic DvP verified",
+    "Claude atomic DvP verified",
+    "unverified buyer rejected without cash debit",
+    "frozen buyer rejected"
+  ],
+  "trades": [
+    {
+      "batch": "codex",
+      "units": "10",
+      "payment": "5000000",
+      "transactionHash": "0x79f8dd5611f1b0c2f37c798d69f727512ea020ec1270960e40f898d6c1023c4b",
+      "blockNumber": 17,
+      "chainId": 31337,
+      "verified": true,
+      "buyer": "0x862b599d6ed2240477689E9415AD8F6F9dA4040e",
+      "balances": {
+        "before": {
+          "cash": "10000000000",
+          "asset": "0"
+        },
+        "after": {
+          "cash": "9995000000",
+          "asset": "10"
+        }
+      }
+    },
+    {
+      "batch": "claude",
+      "units": "10",
+      "payment": "7000000",
+      "transactionHash": "0x212477bb6da42535c051aed2869c4ff9c3157b6cd21683860f89aeb2e5316a88",
+      "blockNumber": 19,
+      "chainId": 31337,
+      "verified": true,
+      "buyer": "0x862b599d6ed2240477689E9415AD8F6F9dA4040e",
+      "balances": {
+        "before": {
+          "cash": "9995000000",
+          "asset": "0"
+        },
+        "after": {
+          "cash": "9988000000",
+          "asset": "10"
+        }
+      }
+    }
+  ],
+  "addresses": {
+    "hub": "0x3a6144584E2cc89A4d87C5e7F1ad2f73CceA3c63",
+    "topics": "0x1866282b81Ff3561a5637d832D916f43AFF615ec",
+    "issuers": "0x41F65cF2Cd986d7593543D5AD730888f7Ff44082",
+    "storage": "0xD194Fbd567AA04FFE1ec08F40B0aEb7365826398",
+    "registry": "0xb3705B0363C7F3BBFE0327Fa3ff597f3287AF5Ff",
+    "issuer": "0x27d90c42354ca0F09f457c17bF66d470EE39875F",
+    "buyerIdentity": "0x14EcF62FCA13De53a82a12DE5b0DF4348d9Bd465",
+    "inventoryIdentity": "0xCE7a3F35F4e0571e5955F4760ecFa79dCA4FDB74",
+    "cash": "0x1b4d3c6bcD8B7d36A98c4285DC42F6740523A8d9",
+    "dvp": "0xC89969Fa299A892B610Aa98AeDe9365184A35df6",
+    "codexCompliance": "0x75663044861c0d3600072DB70079ec7697fC97Fe",
+    "codex": "0xcf654E8cCC4a46eF1a291948a58913841FEF9275",
+    "claudeCompliance": "0xE89375aFD67E0187314744e73a8Eec6fA7A90164",
+    "claude": "0xd366399B6E994C19683c4797dFBA22Aa2481ab14"
+  }
+}
