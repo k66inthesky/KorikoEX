@@ -1,4 +1,10 @@
-# 智能交易所 PoC
+# 克里克交易所 · KorikoEX
+
+![《魔女宅急便》克里克城市街景](public/koriko-city.jpg)
+
+名稱靈感來自《魔女宅急便》的克里克（Koriko）城市：讓閒置價值重新流動的智能交易所。
+
+城市主視覺採用[吉卜力官方釋出劇照](https://www.ghibli.jp/works/majo/)（[原圖 majo047.jpg](https://www.ghibli.jp/gallery/majo047.jpg)）。© 1989 Eiko Kadono/Hayao Miyazaki/Studio Ghibli, N。官方標示可於常識範圍內自由使用；圖片不適用本 repo 的 GPL 程式碼授權。本作品為學習 PoC，與吉卜力無合作或背書關係。
 
 雙 Agent 訂閱殘值估價與測試 USDC 抵押借貸。第一波概念資產為 Codex／Claude 訂閱，保留原 ERC-3643 + DvP 市場。
 
