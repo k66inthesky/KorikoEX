@@ -1,0 +1,26 @@
+{
+  "name": "intelligent-exchange-poc",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/compile.mjs && node --test test/*.test.mjs",
+    "compile": "node scripts/compile.mjs",
+    "demo:local": "node --test test/*.test.mjs",
+    "build": "vite build",
+    "dev": "vite --host 127.0.0.1",
+    "agents": "node --env-file-if-exists=.env.local server/index.mjs"
+  },
+  "dependencies": {
+    "@onchain-id/solidity": "2.2.1",
+    "@openzeppelin/contracts": "4.9.6",
+    "@openzeppelin/contracts-upgradeable": "4.9.6",
+    "@tokenysolutions/t-rex": "4.1.6",
+    "ethers": "6.17.0"
+  },
+  "devDependencies": {
+    "ganache": "7.9.2",
+    "solc": "0.8.17",
+    "vite": "6.4.3"
+  }
+}
