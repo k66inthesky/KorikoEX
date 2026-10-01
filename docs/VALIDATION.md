@@ -30,3 +30,11 @@
 - `npm test`：8 個測試全部通過，包含既有 ERC-3643／DvP 與借貸合約整合測試，以及 4 個 Sepolia 錢包測試（未知網路、錯誤網路、使用者拒絕、缺少錢包）。
 - Chrome 實際偵測到 MetaMask 與 OKX Wallet；MetaMask 連線請求已發起，待使用者確認。公開測試網交易尚未完成，不宣稱鏈上成功。
 - 原創 SVG 標誌共用於兩頁導覽列與 favicon，另提供 PNG、ICO 與 Apple touch icon。
+
+## Sepolia USDC 與錢包綁定（2026-10-01）
+
+- 10 個 Node 測試全部通過：既有 ERC-3643 DvP／借貸整合、錢包切鏈與拒絕，以及舊付款代幣與錯誤網路阻擋。
+- Vite production build 通過；仍有既有共享 JS chunk 大於 500 kB 的提示。
+- Chrome 實測 OKX 錢包綁定、讀取 40 Sepolia USDC、一鍵斷開、餘額／signer 清除及重新綁定成功。
+- Circle 官方 Ethereum Sepolia USDC 地址已按官方文件核對；公開 Sepolia 禁用 MockUSD／MockUSDC，舊部署儲存資料隔離。
+- 公開 Sepolia 市場部署流程已啟動，尚待使用者錢包簽署與成功收據；未將本地交易冒稱公開測試網交易。

@@ -4,3 +4,5 @@
 .brand-logo{width:42px;height:42px;flex-shrink:0}.headright select{max-width:145px;color:#d8e7da;background:#102822;border:1px solid #395044;padding:8px;border-radius:7px;font:inherit;font-size:12px}.headright select[hidden]{display:none}.receipt a{overflow-wrap:anywhere}@media(max-width:700px){.brand{gap:7px}.brand-logo{width:34px;height:34px}.headright{gap:8px}.headright select{max-width:100px}}
 
 .chain-receipts{display:grid;gap:12px;font-size:12px;color:#a6d7bd}.chain-receipts a{overflow-wrap:anywhere}.chain-receipts a:hover{text-decoration:underline}
+
+button[hidden]{display:none!important}.wallet-status{font-size:10px;color:#99bfac}.headright{gap:12px}#disconnect{font-size:11px;padding:8px 10px;color:#f1c4bd}@media(max-width:1000px){.wallet-status{display:none}.headright{gap:7px}.brand span{display:none}header{height:auto;min-height:82px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;gap:12px}}

@@ -96,3 +96,11 @@ Tokeny T-REX 4.1.6，ONCHAINID 2.2.1，OpenZeppelin 4.9.6，Solidity 0.8.17。�
 原創 SVG 標誌以蝴蝶結與掃帚組成；官網兩頁與 favicon 共用 `public/koriko-logo.svg`。PNG／ICO 為同一向量的輸出。
 
 錢包連線支援 EIP-6963 選擇瀏覽器錢包，並驗證 Sepolia chain ID 11155111；不支援未設定的手機 WalletConnect。請在安裝錢包的瀏覽器開啟網站，由使用者確認連線、切換網路與所有交易。
+
+## Sepolia USDC 與錢包綁定
+
+DvP 與公開測試網借貸僅使用 Circle 官方 Ethereum Sepolia USDC：`0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238`（6 位小數）。舊 mUSD 部署保留但不再載入；新版儲存空間隔離，須重新部署 USDC 市場。MockUSD／MockUSDC 僅供本地合約測試。
+
+右上角自動偵測 EIP-6963 錢包；選擇另一錢包即請求綁定。已授權且曾綁定的錢包可在重新開啟時恢復；明確斷開後不自動重連。斷開會清除網站 signer 並嘗試撤銷錢包權限（不支援時須到錢包內撤銷）。切換帳號／鏈時清除連線，阻止舊身分送出交易。
+
+部署可復原待確認 hash；買入先檢查 USDC 餘額、库存與資格，授權限於成交金額。收據核對付款、憑證餘額與 Settled 事件。
