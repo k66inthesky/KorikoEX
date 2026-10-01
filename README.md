@@ -111,3 +111,9 @@ Codex 每枚 0.10 Sepolia USDC，Claude 每枚 0.15 Sepolia USDC；預設買 1 �
 
 ### UI 品牌素材
 市場中的 Codex 使用 OpenAI 官方開發者網站的品牌圖示：https://developers.openai.com/favicon.png 。Claude Spark 使用 Anthropic 官方 press kit：https://www.anthropic.com/press-kit 。圖示商標分別屬 OpenAI 與 Anthropic，僅用來識別示範服務，不代表合作或背書。兩個頁面共用克里克城市主視覺及奶油白、海港綠、紅瓦色調；背景劇照來源與權利標示見上方。
+
+### 公開 Sepolia 驗證
+2026-10-01 已完成兩筆 ERC-3643 原子 DvP：Codex 1 枚支付 0.10 USDC，Claude 1 枚支付 0.15 USDC。完整交易 hash、合約地址與餘額差異見 [Sepolia 證據](public/sepolia-evidence.json)。執行 `node scripts/verify-sepolia.mjs` 可獨立核對公開收據與事件。兩批資產均為 mock 服務憑證，不兌換官方訂閱或 token。
+
+### 模擬綁定訂閱帳號
+首頁按「模擬綁定 ChatGPT／Claude 帳號並估價」，選擇訂閱等級、實付金額、開始及到期日期。ChatGPT 提供 Go／Plus／Pro 示範，Claude 提供 Pro／5x／20x 與自訂 25x 情境。預填金額都是模擬資料，並非官方訂價或已驗證帳號資料。不收帳密，不執行實際 OAuth。

@@ -1,0 +1,138 @@
+{
+  "owner": "0x3dca49f4Af0D04f0B89241f00A29dF80136C62f2",
+  "chainId": 11155111,
+  "transactions": [
+    {
+      "label": "部署管理合約",
+      "hash": "0xc55629f76f0ba727715d0dec5b180438dadcec820088cfae54c0a12ef26051ee",
+      "block": 11820321
+    },
+    {
+      "label": "部署 topics",
+      "hash": "0xe25044b7e1ede4c9b10409be5f249076964b50d86e72c7188a3f46523c1efc21",
+      "block": 11820328
+    },
+    {
+      "label": "部署 issuers",
+      "hash": "0x82ade8b1e4b024615028caa7fc3886260e0ec29faf8d3b9a3c2cd9bd56de6ac2",
+      "block": 11820386
+    },
+    {
+      "label": "部署 storage",
+      "hash": "0x03596a17797004e813b63d600c23f036d0b59a27975e6099e69e5b93d594c6ec",
+      "block": 11820431
+    },
+    {
+      "label": "部署 registry",
+      "hash": "0x2357a6fe297b16695299a7a11e562cb71ce586936818fc6d03537b9d446dd4af",
+      "block": 11820436
+    },
+    {
+      "label": "復原部署 issuer",
+      "hash": "0x86c78420f41cceafcd53b59f63d0892a93e8b91adffc453d69b3af1a89ac1a5a",
+      "block": 11820439
+    },
+    {
+      "label": "復原部署 buyerIdentity",
+      "hash": "0x3f8582abda52e052e0d6066bc7ee8ba5580c16142beae152ff8e2ec5c91cbd43",
+      "block": 11820456
+    },
+    {
+      "label": "部署 inventoryIdentity",
+      "hash": "0xeab9bea6bca21f9cdb65f632e9aaf2fde92b1a4a95eb93a9f59fc8c0836e868b",
+      "block": 11820474
+    },
+    {
+      "label": "部署 dvp",
+      "hash": "0x0e9eb110d2c54a2acd310598fb9cfd3864833c1443c83d425fa18ef0ba8b1e3a",
+      "block": 11820478
+    },
+    {
+      "label": "部署 codexCompliance",
+      "hash": "0xd250f4b85a53b55b320bcd585ceb22e153a97b84b0c960c355d4569f16133d6c",
+      "block": 11820482
+    },
+    {
+      "label": "部署 codex",
+      "hash": "0xd3a904044f413e5a627a4798857140786fab106e546e219e1e27dc0bd7741e5b",
+      "block": 11820499
+    },
+    {
+      "label": "部署 claudeCompliance",
+      "hash": "0x025630089d9aec7d99bb1891b4842ff8efebf7ee2574e34c42dd76ed28f2bc66",
+      "block": 11820503
+    },
+    {
+      "label": "部署 claude",
+      "hash": "0x583ff0dd0dca42f196e443e7dd8a0baa5799cfb0a2163fc45a4230c39cc1222d",
+      "block": 11820515
+    },
+    {
+      "label": "設定資格、資產與市場",
+      "hash": "0x7a5cb72220b7c68534572c9fde48cb367688287ce6d4d7befc7788926c7dbc38",
+      "block": 11820525
+    }
+  ],
+  "addresses": {
+    "hub": "0x615E2313E2C99c8EF20D2347396051edEb927CFD",
+    "topics": "0xA8C1522e00f5e2929a6D0Df717D22cfd03866668",
+    "issuers": "0x41B98C5E8B55CA3692e272447Cd87ad78b9b74A4",
+    "storage": "0xB3c1e24e2208dfEA593D56B945b3aefA992aBda8",
+    "registry": "0x0bF4eB57Ac93F2b89Cb858DfCa1a8bbE4f880146",
+    "issuer": "0xEd2afF79d800616F1A3Bc9647AF92309503811cF",
+    "buyerIdentity": "0x1b4324AbE77284cAc257093526D31641746Dc344",
+    "inventoryIdentity": "0x66d7F88c700C5E5A2e0334498b88D3686B08bDE5",
+    "cash": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+    "dvp": "0xAd30fF695C4c43508B5c1eeeEDd5d8102D290123",
+    "codexCompliance": "0x628E409600A926Ba96c5897fad791Dfe0b565aB2",
+    "codex": "0x579c69345B9CdA8673c788a307E2F4F8e9CCfd5e",
+    "claudeCompliance": "0x8AfBD3EDF8242bfaB090093fb32c5449B89fD614",
+    "claude": "0x615b2FB7625f2F060781CF278529C6f0172195A0"
+  },
+  "expiresAt": 1793433517,
+  "configured": true,
+  "trades": [
+    {
+      "batch": "codex",
+      "units": "1",
+      "payment": "100000",
+      "transactionHash": "0x1a4c53a49ae52f956033fd1763cb027d7912f959f766776b7767338d1e1738d2",
+      "blockNumber": 11820538,
+      "chainId": 11155111,
+      "verified": true,
+      "paymentToken": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+      "buyer": "0x3dca49f4Af0D04f0B89241f00A29dF80136C62f2",
+      "balances": {
+        "before": {
+          "cash": "40000000",
+          "asset": "0"
+        },
+        "after": {
+          "cash": "39900000",
+          "asset": "1"
+        }
+      }
+    },
+    {
+      "batch": "claude",
+      "units": "1",
+      "payment": "150000",
+      "transactionHash": "0x9f1053e5898058d3edce31dc7f2890b617582abd476c61de3ba9d2e767966439",
+      "blockNumber": 11820549,
+      "chainId": 11155111,
+      "verified": true,
+      "paymentToken": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+      "buyer": "0x3dca49f4Af0D04f0B89241f00A29dF80136C62f2",
+      "balances": {
+        "before": {
+          "cash": "39900000",
+          "asset": "0"
+        },
+        "after": {
+          "cash": "39750000",
+          "asset": "1"
+        }
+      }
+    }
+  ]
+}

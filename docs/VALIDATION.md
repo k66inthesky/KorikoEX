@@ -46,3 +46,15 @@
 - `npm run build` 通過。
 - Sepolia 管理合約與 Claim Topics 元件已有成功收據；市場部署與 DvP 實測尚未全部完成。
 - Chrome 已顯示低價與單筆 5 USDC 限額；自主測試因 Mac 鎖定而暫停，需使用者手動解鎖。
+
+## 公開 Sepolia DvP 成果（2026-10-01）
+
+- 完整市場已完成部署、兩筆 mock Claim 簽署、資格登錄、兩批憑證與庫存設定。
+- Codex 1 枚支付 0.10 USDC，區塊 11820538：`0x1a4c53a49ae52f956033fd1763cb027d7912f959f766776b7767338d1e1738d2`。
+- Claude 1 枚支付 0.15 USDC，區塊 11820549：`0x9f1053e5898058d3edce31dc7f2890b617582abd476c61de3ba9d2e767966439`。
+- `node scripts/verify-sepolia.mjs` 獨立讀取公開 RPC，核對成功收據、Settled 事件、Circle USDC Transfer 與 ERC-3643 憑證 Transfer，兩筆通過。
+- 交易後錢包 USDC 由 40 變為 39.75，兩類憑證各持有 1 枚。完整證據位於 `public/sepolia-evidence.json`。
+- 修正 OKX RPC 過舊的收據／程式碼／gas 估算狀態，簽署仍留在瀏覽器錢包。讀取 RPC 禁用批次請求並設定逾時。
+- `node --test test/*.test.mjs` 最新 10 組測試通過，包含精確授權、借貸流程與回滾。
+- ChatGPT Plus、Claude 20x 模擬綁定與估價、1 單位借款、一天利息 0.000329、還款釋放，以及到期清算展示均通過。
+- 公開借貸池目前僅確認抵押 NFT 元件，尚未完成公開借款／還款／清算。Mac 再次鎖定，等待手動解鎖後接續測試。

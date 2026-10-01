@@ -14,12 +14,12 @@
       "batch": "codex",
       "units": "10",
       "payment": "1000000",
-      "transactionHash": "0x18ccba06a976b0860396309e10b43a733ba5662f73e590bcbd480032faa9f530",
+      "transactionHash": "0xe8b509143da87baf24549baa70044dbfb2d80f0157c4ddbe9ddcdf18a8e908b4",
       "blockNumber": 17,
       "chainId": 31337,
       "verified": true,
-      "paymentToken": "0x61C75D4D35E30d3BEE378E60C543dC0146ee9efE",
-      "buyer": "0x496E430E7e72f9783CAE83BC5Ca016BD65eA80aA",
+      "paymentToken": "0x4C7b235AcfecD5921F6b235987df87721bEe42Fd",
+      "buyer": "0x117856f88bE1c7339751dB44b8E4ef87EB414fa1",
       "balances": {
         "before": {
           "cash": "10000000000",
@@ -35,12 +35,12 @@
       "batch": "claude",
       "units": "10",
       "payment": "1500000",
-      "transactionHash": "0xe3f9d345cb2fc6417adae9d07c1394c6a3d630ef52e85df97e1da3c9ecaaa9c3",
+      "transactionHash": "0x592ba0bad3459443ffa468c6cf4286bab10aaef773eba7df1234a8bc14816093",
       "blockNumber": 19,
       "chainId": 31337,
       "verified": true,
-      "paymentToken": "0x61C75D4D35E30d3BEE378E60C543dC0146ee9efE",
-      "buyer": "0x496E430E7e72f9783CAE83BC5Ca016BD65eA80aA",
+      "paymentToken": "0x4C7b235AcfecD5921F6b235987df87721bEe42Fd",
+      "buyer": "0x117856f88bE1c7339751dB44b8E4ef87EB414fa1",
       "balances": {
         "before": {
           "cash": "9999000000",
@@ -54,19 +54,19 @@
     }
   ],
   "addresses": {
-    "hub": "0xab22DC3f771040ABDf0D9F80Bf35d1741A3D6393",
-    "topics": "0x0AC0Bb1372263eDc419CC01751c7704A63DC8DcF",
-    "issuers": "0xE1EC518bC8088E94a4cF5996B65e5F100D4A6DD8",
-    "storage": "0x725CEb8BBea22dc62eAB9cb7c159cA62D92ffaa9",
-    "registry": "0xFc7B696d5Fb0897c238e3f436802E3509389df04",
-    "issuer": "0x884FB9C97f88f106C5a34dbb93D11686e4bA55b2",
-    "buyerIdentity": "0xE8C9865CC5aa3d29A38F4Bba4A665Ee5E22D6B7c",
-    "inventoryIdentity": "0xC74C7E09baC27d688a22C9A84F48Ac1B8903A454",
-    "cash": "0x61C75D4D35E30d3BEE378E60C543dC0146ee9efE",
-    "dvp": "0xe5886e885edAef457C071E8190595A17771f0F1f",
-    "codexCompliance": "0xA98655ECB2bED6beCe519F10Fe26d4Afc1e5a4DE",
-    "codex": "0x4C340Fd1d4dAEDca2C2244F37504c4952f7309d8",
-    "claudeCompliance": "0xF710Aa384C3310ca4c924EdcBFAbbB62a0DCDce3",
-    "claude": "0x0dE45b014e35C6F8D8d8ABA3269a4e6d5279D548"
+    "hub": "0x61B5AFe068b56832AcB1C06B31690A536Da661B4",
+    "topics": "0x5bA8677097dDb73921214F0d35094B84Bb2566E3",
+    "issuers": "0x0Ba1603e1F167340917001649FBacF4Ad7CedFed",
+    "storage": "0x176147e825264843fE3E1a1F34625F197705BA07",
+    "registry": "0x0fcf643a658Abf90a165cc3792Ca99872368EbCf",
+    "issuer": "0x51c9cCD9B34C8A3f8cd59983734E86A853175Cd7",
+    "buyerIdentity": "0xEAa98f4309D6D1d9c011cCEe1BFA521997d0C85D",
+    "inventoryIdentity": "0xdCf940b1A176025a1Fd3AB4FD6401b91bcC1Eef2",
+    "cash": "0x4C7b235AcfecD5921F6b235987df87721bEe42Fd",
+    "dvp": "0xd9Ed8ccA38B8cdB087d508E2Be5c75C7Dde15B0c",
+    "codexCompliance": "0x50b4575182999060d0cB162dc6A89e096bBD637e",
+    "codex": "0xeAc5919B40f3a309dAEE61cf85F2489f5A817c18",
+    "claudeCompliance": "0xEebE9b477BeC117FBa3791d52B96e1D8C5429aEF",
+    "claude": "0x443eBdB81F4E80256f13097C66FB2C7C38e1266A"
   }
 }
