@@ -1,5 +1,7 @@
 # 克里克交易所 · KorikoEX
 
+<img src="public/koriko-logo.svg" width="96" alt="KorikoEX 蝴蝶結與掃帚標誌">
+
 ![《魔女宅急便》克里克城市街景](public/koriko-city.jpg)
 
 名稱靈感來自《魔女宅急便》的克里克（Koriko）城市：讓閒置價值重新流動的智能交易所。
@@ -88,3 +90,9 @@ Tokeny T-REX 4.1.6，ONCHAINID 2.2.1，OpenZeppelin 4.9.6，Solidity 0.8.17。�
 - https://developers.circle.com/stablecoins/usdc-contract-addresses
 - https://eips.ethereum.org/EIPS/eip-3643
 - https://github.com/TokenySolutions/T-REX
+
+## 品牌標誌
+
+原創 SVG 標誌以蝴蝶結與掃帚組成；官網兩頁與 favicon 共用 `public/koriko-logo.svg`。PNG／ICO 為同一向量的輸出。
+
+錢包連線支援 EIP-6963 選擇瀏覽器錢包，並驗證 Sepolia chain ID 11155111；不支援未設定的手機 WalletConnect。請在安裝錢包的瀏覽器開啟網站，由使用者確認連線、切換網路與所有交易。

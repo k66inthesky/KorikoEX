@@ -24,3 +24,9 @@
 - 清算只移交NFT，無拍賣／回收款分配，所以記錄badDebt，不保證貸方無損。
 - ERC-3643服務市場與ERC-721抵押借貸是分開的PoC資產。
 - 目前live adapter只綁定本機，未部署經驗證的公開AI後端。
+
+## KorikoEX logo 與錢包更新（2026-10-01）
+
+- `npm test`：8 個測試全部通過，包含既有 ERC-3643／DvP 與借貸合約整合測試，以及 4 個 Sepolia 錢包測試（未知網路、錯誤網路、使用者拒絕、缺少錢包）。
+- Chrome 實際偵測到 MetaMask 與 OKX Wallet；MetaMask 連線請求已發起，待使用者確認。公開測試網交易尚未完成，不宣稱鏈上成功。
+- 原創 SVG 標誌共用於兩頁導覽列與 favicon，另提供 PNG、ICO 與 Apple touch icon。
