@@ -108,3 +108,6 @@ DvP 與公開測試網借貸僅使用 Circle 官方 Ethereum Sepolia USDC：`0x1
 ## 測試預算
 
 Codex 每枚 0.10 Sepolia USDC，Claude 每枚 0.15 Sepolia USDC；預設買 1 枚。單筆 DvP 成交上限 5 USDC，由前端與新版 DvP 合約共同拒絕超額訂單；USDC 授權限於本次成交金額。借貸介面預設本金 1 USDC、單筆入金 5 USDC；本金上限 4.9 USDC，為最多 30 天利息預留空間，還款授權也不得超過 5 USDC。測試 ETH 為另計的網路費用。
+
+### UI 品牌素材
+市場中的 Codex 使用 OpenAI 官方開發者網站的品牌圖示：https://developers.openai.com/favicon.png 。Claude Spark 使用 Anthropic 官方 press kit：https://www.anthropic.com/press-kit 。圖示商標分別屬 OpenAI 與 Anthropic，僅用來識別示範服務，不代表合作或背書。兩個頁面共用克里克城市主視覺及奶油白、海港綠、紅瓦色調；背景劇照來源與權利標示見上方。
